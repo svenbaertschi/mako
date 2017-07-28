@@ -3,6 +3,7 @@
 
 body { padding-top: 70px; } 
 
+#navbar a {font-family: 'Roboto'}
 #navbar a.links:link {font-size:120%} 
 #navbar a.links:visited {font-size:120%}
 #navbar a.links:hover {font-weight: bold; color: #30afff!important ; font-size:120%}
@@ -57,13 +58,7 @@ h11 {
 .navbarbrandblue {
   font-family: 'Roboto';
   color: #30afff;
-}
-
-.headerlink {
-  font-family: 'Roboto';
-}
-.mobilecenter {
-  text-align:center;
+  font-weight:500;
 }
 
 p, h1,h2,h3,h4,h5 {
@@ -82,6 +77,16 @@ h2 {
 
 #id_location {
   text-align:center;
+}
+
+/* "full screen" text align in middle, roughly */
+.vert-align-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: -o-calc(100vh - 150px); /* opera */
+    height: -webkit-calc(100vh - 150px); /* google, safari */
+    height: -moz-calc(100vh - 150px); /* firefox */
 }
 
 /* Responsive */
@@ -121,11 +126,4 @@ h2 {
   }
 }
 
-.vert-align-full {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: -o-calc(100vh - 150px); /* opera */
-    height: -webkit-calc(100vh - 150px); /* google, safari */
-    height: -moz-calc(100vh - 150px); /* firefox */
-}
+
