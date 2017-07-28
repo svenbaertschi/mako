@@ -1,12 +1,12 @@
-body { padding-top: 70px; font-family:'Roboto';} 
+body {padding-top:70px; font-family: 'Roboto';} 
 a.links {color: #30afff; text-decoration: none;}
 a.links:visited {color: #30afff;}
 a.links:hover {color: #777;}
-#navbar a {font-family: 'Roboto'}
+#navbar a {font-family: 'Roboto'; font-size: 120%;}
 #navbar a.links:link {font-size: 120%} 
 #navbar a.links:visited {font-size: 120%}
-#navbar a.links:hover {font-weight: bold; color: #30afff!important ; font-size: 120%}
-#navbar a.links:active {font-weight: bold; color: #30afff!important ; font-size: 120%}
+#navbar a.links:hover {font-weight: bold; color: #30afff!important ; }
+#navbar a.links:active {font-weight: bold; color: #30afff!important ; }
 a.link-dark {color: black; text-decoration: none; font-weight: 400; font-size: 3em; }
 a.link-dark:visited {color: black;}
 a.link-dark:hover {color: #30afff;}
@@ -24,7 +24,7 @@ p, h1, h2, h3, h4, h5 {
   font-family: 'Roboto';
   color: #383838;
 }
-h1 {color: black; text-decoration: none; font-weight: 500; font-size: 3em; }
+h1 {color: black; text-decoration: none; font-weight: 400; font-size: 3em; }
 h2 {font-weight: 500;}
 
 h10 {
@@ -78,15 +78,15 @@ h11 {
 #id_location {
   text-align:center;
 }
-
+/*.navbar {display:none!important;}*/
 /* "full screen" text align in middle, roughly */
 .vert-align-full {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: -o-calc(100vh - 160px); /* opera */
-    height: -webkit-calc(100vh - 160px); /* google, safari */
-    height: -moz-calc(100vh - 160px); /* firefox */
+    height: -o-calc(75vh); /* opera */
+    height: -webkit-calc(75vh); /* google, safari */
+    height: -moz-calc(75vh); /* firefox */
 }
 
 /* NavBar toggle border */
@@ -95,6 +95,13 @@ h11 {
       border: none;
       outline: none;
     }
+    .vert-align-full {
+    padding-top:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+  }
 }
 /* Responsive */
 @media (min-width: 768px) {
@@ -118,11 +125,6 @@ h11 {
   h11 {
         font-size:700%;
   }
-}
-
-
-@media (max-width: 768px) {
-    navbar-brand { display:none !important;}
 }
 
 /* OCD fix for carousel buttons */
