@@ -89,6 +89,13 @@ h11 {
     height: -moz-calc(100vh - 160px); /* firefox */
 }
 
+/* NavBar toggle border */
+@media (max-width: 767px) {
+    .navbar-toggle {
+      border: none;
+      outline: none;
+    }
+}
 /* Responsive */
 @media (min-width: 768px) {
   .reappear {
