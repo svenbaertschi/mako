@@ -4,25 +4,26 @@ Weather | CodeVetica
 {% endblock %}
 {% block content %}
 
-<div style="text-align:center; color:#30afff; padding-top:30px;"><h2>Useless Weather App</h2></div>
-
-<div style="padding-top:40px; text-align:center;">
-	<form action='/weather/' method='post'>{% csrf_token %}
-	{% for field in form %}
-        <div class="fieldWrapper">
-            {{ field.errors }}
-            {{ field.label_tag }} <br>{{ field }}
-        </div>
-    {% endfor %}
-	<input type='submit' value='Get the Weather' />
-	</form>
-	<br><br>
-	<p>unrecognized location</p>
-	<p>try again</p>
-	---<br>
-	<p>this software uses an advanced recognition algorithm (lol)<br>it does not require precise spelling of location queries</p>
-	<p>try 'roananan' for instance</p><p>I obviously did not write this feature</p>
-	
-	
+<div class="vert-align-full text-center">
+	<div id = "container">
+		<h2>Useless Weather App</h2>
+			<div style="padding-top:30px;">
+				<form action='/weather/' method='post'>{% csrf_token %}
+				{% for field in form %}
+					<div class="fieldWrapper">
+						{{ field.errors }}
+						{{ field.label_tag }} <br>{{ field }}
+					</div>
+				{% endfor %}
+				<input type='submit' value='Get the Weather' />
+				</form>
+				<br><br>
+				<p>unrecognized location</p>
+				---<br>
+				<p>this software uses an advanced search algorithm (aka yahoo's)<br>it does not require precise spelling of location queries</p>
+				<p> try "roananan" or "yahoo" for instance</p>
+		</div>
+	</div>
 </div>
+
 {% endblock %}
