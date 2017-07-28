@@ -1,0 +1,122 @@
+/* I'm lazy, can I even do this? */
+@import "bootstrap.css";
+
+#navbar a.links:link {font-size:120%} 
+#navbar a.links:visited {font-size:120%}
+#navbar a.links:hover {font-weight: bold; color: #30afff!important ; font-size:120%}
+#navbar a.links:active {font-weight: bold; color: #30afff!important ; font-size:120%}
+
+.navbar {
+  background-color:white;
+  padding: 10px 0 10px 0;
+  -webkit-box-shadow: 0 4px 4px -4px #999;
+  -moz-box-shadow: 0 4px 4px -4px #999;
+  box-shadow: 0 4px 4px -4px #999;
+
+}
+
+h10 {
+      font-family: 'Roboto', Helvetica, sans-serif;
+      font-size: 200%;
+      text-align: center;
+      margin: 0;
+		  padding-left: 1%;
+		  background: rgb(0, 0, 0); /* fallback color */
+      background: rgba(0, 0, 0, 0.6);
+      font-weight: 300;
+      padding-right: 2%;
+
+}
+
+h11 {
+      font-family: 'Roboto', Helvetica, sans-serif;
+      font-size: 200%;
+      color: #38ACEC; 
+      text-align:center;
+		  margin: 0;
+		  background: rgb(0, 0, 0); /* fallback color */
+      background: rgba(0, 0, 0, 0.6);
+      font-weight: 300;
+      padding-left:2%;
+}
+
+.carousel-title {
+  position: absolute !important;
+  right: 15% !important;
+  bottom: 38% !important;
+  left: 15% !important;
+  z-index: 10;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.navbarbrandblue {
+  font-family: 'Roboto';
+  color: #30afff;
+}
+
+.headerlink {
+  font-family: 'Roboto';
+}
+.mobilecenter {
+  text-align:center;
+}
+
+p, h1,h2,h3,h4,h5 {
+  font-family: 'Roboto';
+  color: #383838;
+}
+
+h2 {
+  font-weight:bold;
+}
+
+.fieldWrapper {
+  padding: 0 0 10px 0;
+}
+
+
+#id_location {
+  text-align:center;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .reappear {
+    display:none !important;
+  }
+  #spacer1 {
+    margin-top:15rem;
+    margin-bottom:15rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  h10 {
+        font-size:400%;
+  }
+  h11 {
+        font-size:400%;
+  }
+}
+
+@media (min-width: 1200px) {
+  h10 {
+        font-size:700%;
+  }
+  h11 {
+        font-size:700%;
+  }
+}
+
+body { padding-top: 70px; } 
+
+
+@media (max-width: 768px) {
+    navbar-brand { display:none !important;}
+    #spacer1 {
+      margin-top:8rem;
+      margin-bottom:8rem;
+  }
+}

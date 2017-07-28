@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link href='//fonts.googleapis.com/css?family=Roboto:100,200,400,300,500,700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" href="{% static 'personal/images/favicon.ico' %}">
+  <style media="screen" type="text/css">{% block addcss %}{% endblock %}</style>
+</head>
+<body>
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/" title="Home"><p style="font-size:1.5em; padding-left:10px; color:#777;"><b class="navbarbrandblue">Code</b><span style="font-size:8px"> </span>Vetica</p></a>
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+        </button>
+    </div>
+	
+	 <div class="collapse navbar-collapse" id="myNavbar">
+  	  <ul class="nav navbar-nav navbar-right mobilecenter">
+        <li class="headerlink"><a href="/apps" class="links">Applications</a></li>
+        <li class="headerlink"><a href="/weather" class="links">Weather</a></li>
+        <li class="headerlink"><a href="/" class="links">Developers</a></li>
+  		  <li class="headerlink"><a href="/contact" class="links">Contact</a></li> 
+      </ul>
+	 </div>
+  </div>
+</div>
+
+{% block content %}
+{% endblock %}
+</body>
+</html>
