@@ -5,8 +5,8 @@ a.links:hover {color: #777;}
 #navbar a {font-family: 'Roboto'; font-size: 120%;}
 #navbar a.links:link {font-size: 120%} 
 #navbar a.links:visited {font-size: 120%}
-#navbar a.links:hover {font-weight: bold; color: #30afff!important ; }
-#navbar a.links:active {font-weight: bold; color: #30afff!important ; }
+#navbar a.links:hover {color: #30afff!important ; }
+#navbar a.links:active {color: #30afff!important ; }
 a.link-dark {color: black; text-decoration: none; font-weight: 400; font-size: 3em; }
 a.link-dark:visited {color: black;}
 a.link-dark:hover {color: #30afff;}
